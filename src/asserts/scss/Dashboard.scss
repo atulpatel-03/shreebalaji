@@ -1,0 +1,136 @@
+.main-div{
+    background-image: url("../images/gambling1.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.heading-div{
+    text-align: center;
+    font-size: 4rem;
+    text-shadow:  0px 5px 5px rgba(0, 0, 0, 0.25);
+    font-weight: 800;
+    font-family:cursive;
+    // color: #25d366;
+}
+
+.middle-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    .mid-img{
+        width: 25rem;
+        align-self: center;
+    }
+
+    .details{
+        align-self: center;
+        font-size: 2rem;
+        font-family: sans-serif;
+        font-weight: 600;
+        color:#555555;
+    }
+}
+.works{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color:#555555;
+}
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    width: 80%;
+    margin-top: 1rem;
+    
+  }
+
+.btn-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.download-btn{
+    background-color: orange;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+    margin-top: 0.5rem;
+    width: auto;
+    align-self: center;
+    color:white;
+}
+
+.download-btn:hover{
+    background-color: darkorange;
+    color:white;
+}
+
+.photo-bord{
+    padding: 1rem;
+}
+
+.carousel-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+
+  .car-1{
+   margin-left: 13%;
+  }
+
+
+.thumbs{
+    display: none;
+}
+}
+
+
+@media screen and (max-width: 600px){
+    .heading-div{
+        font-size: 2rem !important;
+    }
+
+    .middle-div{
+        .details{
+            font-size: 1.2rem;
+            align-items: center;
+            width: 90%;
+        }
+    }
+   .download-btn{
+    width: 100%;
+    font-size: 1rem;
+   }
+   .works{
+    font-size: 1.2rem;
+    align-items: center;
+    width: 90%;
+}
+
+   .car-1{
+    margin-left: 0rem;
+    width: 100%;
+   }
+}

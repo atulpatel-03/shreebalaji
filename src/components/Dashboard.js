@@ -5,6 +5,12 @@ import "../asserts/scss/Dashboard.scss"
 import Logo from "../asserts/images/logo.png"
 import Carousell from './Carousell';
 import fire from '../fire';
+import playApp from "../asserts/images/1s.jpeg";
+import EasyToUse from "../asserts/images/2s.jpeg";
+import Upi from "../asserts/images/3s.jpeg";
+import AllType from "../asserts/images/4s.jpeg";
+import BestOn from "../asserts/images/5s.jpeg";
+
 
 const Dashboard = () => {
 
@@ -28,6 +34,7 @@ const {whatsApp, email, playStore} = formData
     var db = fire.firestore();
 
   return (
+    <div className='mainnn'>
     <div className='main-div'>
         <div className='heading-div'>
         <h1>WELCOME TO SATTA MATKA SHREE BALAJI</h1>
@@ -47,9 +54,34 @@ const {whatsApp, email, playStore} = formData
         </div>
 
       </div>
+      </div>
+      <div className='play-app'>
+        <img className='play-img' src={playApp}></img>
+      </div>
       <div className='works'>How it Works</div>
       
         <Carousell />
+        <hr></hr>
+        <div className='play-app'>
+        <img className='play-img' src={EasyToUse}></img>
+      </div>
+     
+      
+      <hr></hr>
+      <div className='play-app'>
+        <img className='play-img' src={AllType}></img>
+      </div>
+      <hr></hr>
+      <div className='play-app'>
+        <img className='play-img' src={Upi}></img>
+      </div>
+      <hr></hr>
+      <div className='play-app'>
+        <img className='play-img' src={BestOn}></img>
+      </div>
+
+
+        
         </div>
   )
 }

@@ -1,19 +1,24 @@
+.mainnn{
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
 .main-div{
-    background-image: url("../images/gambling1.png");
+    background-image: url("../images/back2.jpg");
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 6rem;
 }
 
 .heading-div{
     text-align: center;
     font-size: 4rem;
-    text-shadow:  0px 5px 5px rgba(0, 0, 0, 0.25);
-    font-weight: 800;
-    font-family:cursive;
+    // text-shadow:  0px 5px 5px rgba(0, 0, 0, 0.25);
+    font-weight: 1000;
+    font-family: sans-serif;
     // color: #25d366;
 }
 
@@ -32,16 +37,29 @@
         font-size: 2rem;
         font-family: sans-serif;
         font-weight: 600;
-        color:#555555;
+        color:#333333;
+    }
+}
+
+.play-app{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    img{
+        width: 100%;
     }
 }
 .works{
-    margin-top: 1rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: sans-serif;
     font-weight: 600;
-    color:#555555;
+    color:whitesmoke;
+    background-color: #ef8383;
+    padding-top: 1rem;
+
+    padding-bottom: 1rem;
 }
 .bg-text {
     background-color: rgb(0,0,0); /* Fallback color */
@@ -110,13 +128,17 @@
 @media screen and (max-width: 600px){
     .heading-div{
         font-size: 2rem !important;
+
     }
 
     .middle-div{
+        .mid-img{
+            width: 20rem;
+        }
         .details{
             font-size: 1.2rem;
-            align-items: center;
-            width: 90%;
+            text-align: center;
+            width: 80%;
         }
     }
    .download-btn{
@@ -126,7 +148,7 @@
    .works{
     font-size: 1.2rem;
     align-items: center;
-    width: 90%;
+    width: 100%;
 }
 
    .car-1{

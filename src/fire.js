@@ -1,14 +1,19 @@
- import firebase from "firebase";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import 'firebase/compat/storage';
+import 'firebase/compat/functions';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAJAEC7WxNlTbl8NEbOzPgwRU2ukH5CPlI",
-  authDomain: "shreebalaji-b8500.firebaseapp.com",
-  projectId: "shreebalaji-b8500",
-  storageBucket: "shreebalaji-b8500.appspot.com",
-  messagingSenderId: "770805685426",
-  appId: "1:770805685426:web:e6bf144dc1a4def3c03dab",
-  measurementId: "G-KFZ81FG9R7"
+  apiKey: "AIzaSyCdOLZRpwhA5CyTWtb6gsHHU-VENC9beaU",
+  authDomain: "shree-balaji-c9b91.firebaseapp.com",
+  projectId: "shree-balaji-c9b91",
+  storageBucket: "shree-balaji-c9b91.appspot.com",
+  messagingSenderId: "566490321605",
+  appId: "1:566490321605:web:a0ef063a59d38de7b296ac",
+  measurementId: "G-GY84DWM02V"
 };
 
 const fire = firebase.initializeApp(firebaseConfig);
+
 export default fire;

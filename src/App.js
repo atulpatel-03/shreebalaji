@@ -1,6 +1,6 @@
 import './App.css';
 import React, {Fragment, useState, useEffect } from "react";
-import { Redirect, BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {Routes, BrowserRouter as Router, Route,} from 'react-router-dom';
 import fire from "./fire";
 import Dashboard from "./components/Dashboard";
 
@@ -14,6 +14,8 @@ function App() {
         console.log("rates effect",temp); 
         setFormData(temp);
     })
+
+
 },[]);
 
 const [formData,setFormData] = useState({
@@ -30,13 +32,14 @@ var db = fire.firestore();
 
   return (
     <Router>
+   
     <a  class="whats-app" href={`https://wa.me/+91`+ whatsApp} target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
 </a>
-          <Switch>
+          <Routes>
           
-            <Route exact path="/" component={Dashboard} />
-          </Switch>
+            <Route exact path="/" element={<Dashboard />} />
+          </Routes>
       </Router>
   );
 }
